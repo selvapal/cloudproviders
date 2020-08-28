@@ -1,12 +1,12 @@
 console.log('Gets data from DynamoDB table')
 
 const AWS = require('aws-sdk');
-const docClient = new AWS.DynamoDB.DocumentClient({region: process.env.REGION});
+const docClient = new AWS.DynamoDB.DocumentClient({region: 'ap-southeast-2'});
 const htmlResponse = require('./html-response');
 
 exports.handler = function(event, context, callback){
     console.log("Running index-get.js: " + context.functionName + ":" + context.functionVersion);
-    console.log('Version 3 processing event: %j', event);
+    console.log('V3 PMD processing event: %j', event);
 
     let scanningParameters = {
         TableName: process.env.TABLE_NAME,
