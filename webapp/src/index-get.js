@@ -9,7 +9,7 @@ exports.handler = function(event, context, callback){
     console.log('V3 PMD processing event: %j', event);
 
     let scanningParameters = {
-        TableName: process.env.TABLE_NAME,
+        TableName: 'CloudProviders,
         // TableName: "makeitfail14",
         Limit: 100 //maximum result of 100 items
     };
