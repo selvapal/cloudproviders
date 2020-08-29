@@ -9,7 +9,7 @@ Parameters:
   GitHubUser:
     Type: String
     Description: GitHub User
-    Default: "PaulDuvall"
+    Default: "selvapal"
   GitHubRepo:
     Type: String
     Description: GitHub Repo to pull from. Only the Name. not the URL
@@ -21,7 +21,7 @@ Parameters:
   GitHubToken:
     NoEcho: true
     Type: String
-    Default: '{{resolve:secretsmanager:github/personal-access-token:SecretString}}'
+    Default: '{{resolve:secretsmanager:github/personal-access-token1:SecretString}}'
     Description: GitHub Token. Must be defined in AWS Secrets Manager and here https://github.com/settings/tokens
   BuildType:
     Type: String
