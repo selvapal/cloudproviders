@@ -11,7 +11,7 @@ exports.handler = function(event, context, callback){
     let scanningParameters = {
         TableName: 'CloudProviders',
         // TableName: "makeitfail14",
-        Limit: 100 //maximum result of 100 items
+        Limit: 90 //maximum result of 100 items
     };
     
     const thanksHtml = `
