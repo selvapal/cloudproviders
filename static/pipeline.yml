@@ -134,7 +134,7 @@ Resources:
             post_build:
               commands:
                 - python --version
-                - aws s3 cp --recursive --acl public-read ./static s3://${SiteBucketName}/ 
+                - aws s3 cp --recursive ./static s3://${SiteBucketName}/ 
           artifacts:
             type: zip
             files:
